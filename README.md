@@ -37,6 +37,11 @@ $ npm install
 $ npm start
 ```
 
+Back end : 
+
+https://github.com/rb-x/creative-resume-back
+
+
 ### Todos
 
  - Add more templates for all the user
