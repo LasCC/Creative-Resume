@@ -23,8 +23,7 @@ Creative Resume uses a number of open source projects to work properly :
 * nodeJS
 * jsPDF
 
-And of course Creative Resume itself is open source with a [https://github.com/LasCC/Creative-Resume][dill]
- on GitHub.
+And of course Creative Resume itself is open source on GitHub.
 
 ### Installation
 
