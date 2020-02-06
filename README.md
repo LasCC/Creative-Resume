@@ -50,5 +50,14 @@ https://github.com/rb-x/creative-resume-back
  - Contact page 
  - Joi validation for the register page
  - Reponsive landing page
+ 
+### Appication (Screenshots) 
+[![N|Solid](https://i.imgur.com/fVncUMl.png)](https://l8tcl.csb.app)
+[![N|Solid](https://i.imgur.com/unRjbQb.png)](https://l8tcl.csb.app)
+[![N|Solid](https://i.imgur.com/enWX24G.png)](https://l8tcl.csb.app)
+[![N|Solid](https://i.imgur.com/gb1dTzg.png)](https://l8tcl.csb.app)
+[![N|Solid](https://i.imgur.com/DYaAtvy.png)](https://l8tcl.csb.app)
+[![N|Solid](https://i.imgur.com/ubow0zU.png)](https://l8tcl.csb.app)
+
 
 Team SRRL - Hackathon ESTIAM 2019
