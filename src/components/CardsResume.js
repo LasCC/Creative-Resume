@@ -76,7 +76,7 @@ const Cardresume = props => {
         style={{
           marginRight: 15,
           width: 180,
-          backgroundImage: `url(https://svgur.com/i/GtL.svg)`,
+          backgroundImage: `url(https://svgshare.com/i/HpZ.svg)`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "right",
           backgroundSize: "cover",

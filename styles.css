@@ -163,6 +163,10 @@ body {
   }
 }
 
+.css-1yn2e29-InputColor {
+  padding: 0px !important;
+  border: 0px !important;
+}
 .css-1vpurlb-InputColor {
   background-position: center;
   background-blend-mode: multiply;
@@ -172,8 +176,6 @@ body {
   border-radius: 25px;
   height: 25px !important;
   width: 25px !important;
-  padding: 0;
-  border: 0;
 }
 
 @keyframes c {

@@ -14,7 +14,7 @@ import { withRouter } from "react-router-dom";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
 
-document.body.style.backgroundImage = `url(https://svgur.com/i/GtL.svg)`;
+document.body.style.backgroundImage = `url(https://svgshare.com/i/HpZ.svg)`;
 document.body.style.backgroundRepeat = "no-repeat";
 document.body.style.backgroundSize = "cover";
 

@@ -39,7 +39,7 @@ export default props => {
         className="hoverCard"
         style={{
           padding: 25,
-          backgroundImage: `url(https://svgur.com/i/GtL.svg)`,
+          backgroundImage: `url(https://svgshare.com/i/HpZ.svg)`,
           backgroundSize: "cover",
           boxShadow: "0px 10px 35px -4px rgba(0,0,0,0.15)",
           backgroundPosition: "bottom-right",
