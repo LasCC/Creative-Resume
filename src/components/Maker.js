@@ -1,6 +1,6 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useState } from "react";
 import { LoginContext } from "../contexts/LoginContext";
-import { Link } from "react-router-dom";
+import InputColor from "react-input-color";
 import {
   Grid,
   Box,
@@ -36,6 +36,7 @@ import PlusOneIcon from "@material-ui/icons/PlusOne";
 import ROUTE from "../Routes";
 
 export default props => {
+  const [initial, setInitial] = useState("#0026ff");
   // ======= ALL OF THE STATES =======
   const { editorState, setEditorState, fetchOneCv, saveOneCv } = useContext(
     LoginContext
@@ -730,6 +731,27 @@ export default props => {
                         cursor: "pointer",
                         backgroundColor: "#ff3f34",
                         marginLeft: 9
+                      }}
+                    />
+                    <InputColor
+                      initialHexColor={initial}
+                      style={{
+                        height: 25,
+                        width: 25,
+                        borderRadius: 25,
+                        cursor: "pointer",
+                        marginLeft: 9
+                      }}
+                      onChange={setColor => {
+                        document.querySelector(".lastNameColor").style.color =
+                          setColor.hex;
+                        document.querySelector(".experienceColor").style.color =
+                          setColor.hex;
+                        document.querySelector(".degreeColor").style.color =
+                          setColor.hex;
+                        document.querySelector(
+                          ".coloredBackground"
+                        ).style.backgroundColor = setColor.hex;
                       }}
                     />
                   </Box>

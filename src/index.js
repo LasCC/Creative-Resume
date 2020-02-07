@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import "./index.css";
+import "../styles.css";
 import LoginProvider from "./contexts/LoginContext";
 import ROUTE from "./Routes";
 import Loader from "./components/Loader";
@@ -18,34 +18,34 @@ const Maker = lazy(() => import("./components/Maker"));
 const UnknownPage = lazy(() => import("./pages/404"));
 
 const App = () => {
-	return (
-		<>
-			<Suspense fallback={<Loader />}>
-				<LoginProvider>
-					<Switch>
-						<Route exact path={ROUTE.HOME} component={Landing} />
-						<ProtectedRoute
-							exact
-							path={ROUTE.DASHBOARD}
-							component={Dashboard}
-						/>
-						<PublicRoute exact path={ROUTE.LOGIN} component={Login} />
-						<PublicRoute exact path={ROUTE.REGISTER} component={Register} />
-						<ProtectedRoute exact path={ROUTE.HELP} component={Help} />
-						<ProtectedRoute exact path={ROUTE.SETTINGS} component={Settings} />
-						<ProtectedRoute exact path={ROUTE.EDITOR} component={Maker} />
-						<Route path="*" component={UnknownPage} />
-					</Switch>
-				</LoginProvider>
-			</Suspense>
-		</>
-	);
+  return (
+    <>
+      <Suspense fallback={<Loader />}>
+        <LoginProvider>
+          <Switch>
+            <Route exact path={ROUTE.HOME} component={Landing} />
+            <ProtectedRoute
+              exact
+              path={ROUTE.DASHBOARD}
+              component={Dashboard}
+            />
+            <PublicRoute exact path={ROUTE.LOGIN} component={Login} />
+            <PublicRoute exact path={ROUTE.REGISTER} component={Register} />
+            <ProtectedRoute exact path={ROUTE.HELP} component={Help} />
+            <ProtectedRoute exact path={ROUTE.SETTINGS} component={Settings} />
+            <ProtectedRoute exact path={ROUTE.EDITOR} component={Maker} />
+            <Route path="*" component={UnknownPage} />
+          </Switch>
+        </LoginProvider>
+      </Suspense>
+    </>
+  );
 };
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
-	<BrowserRouter>
-		<App />
-	</BrowserRouter>,
-	rootElement
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  rootElement
 );
